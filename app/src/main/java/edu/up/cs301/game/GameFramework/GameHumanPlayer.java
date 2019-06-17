@@ -289,6 +289,14 @@ public abstract class GameHumanPlayer implements GamePlayer, Tickable {
 
                 // set our instance variable, to indicate the game as over
                 gameOver = true;
+
+                MessageBox mb = new MessageBox();
+
+                boolean toRestart = true;
+                if(toRestart){
+                    myActivity.restartGame();
+                }
+
             }
             else if (myInfo instanceof TimerInfo) {
                 // if we have a timer-tick, and it's our timer object,

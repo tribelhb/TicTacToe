@@ -882,4 +882,15 @@ public abstract class GameMainActivity extends Activity implements
     public void doFinish(View v) {
         finish();
     }
+
+    //Seeing if we can restart the Game
+    public void restartGame(){
+        String msg = launchGame(this.config);
+        if (msg != null) {
+            // we have an error message
+            MessageBox.popUpMessage(msg, this);
+        }
+    }
+
+
 }
