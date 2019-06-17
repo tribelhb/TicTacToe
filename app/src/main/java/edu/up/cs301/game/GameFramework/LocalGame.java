@@ -372,13 +372,6 @@ public abstract class LocalGame implements Game, Tickable {
         for (GamePlayer p : players) {
             p.sendInfo(new GameOverInfo(msg));
         }
-
-        boolean toRestart = true;
-        //Testing to see if we can restart the game without going to the title screen
-        if(toRestart){
-
-        }
-
     }
 
     /**
