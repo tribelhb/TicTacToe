@@ -183,6 +183,9 @@ public class TTTLocalGame extends LocalGame {
 		// get the 0/1 id of our player
 		int playerId = getPlayerIdx(tm.getPlayer());
 
+		// if it is this player's turn, indicate an illegal move
+		if(!canMove(playerId)) return false;
+
 		// if that space is not blank, indicate an illegal move
 		if (state.getPiece(row, col) != ' ') {
 			return false;

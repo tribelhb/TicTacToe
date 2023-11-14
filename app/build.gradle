@@ -28,6 +28,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.robolectric:robolectric:4.3'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.11.1'
 }
