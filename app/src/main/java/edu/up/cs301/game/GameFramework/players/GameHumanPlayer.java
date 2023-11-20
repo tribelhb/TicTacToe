@@ -207,7 +207,7 @@ public abstract class GameHumanPlayer implements GamePlayer, Tickable {
      * @param info
      * 		the information object to send
      */
-    public void sendInfo(GameInfo info) {
+    public final void sendInfo(GameInfo info) {
         // wait until handler is there
         while (myHandler == null) Thread.yield();
 
